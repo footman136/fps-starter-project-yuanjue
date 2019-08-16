@@ -1,0 +1,15 @@
+<linker>
+    <assembly fullname="Improbable.Gdk.Core" preserve="all"/>
+    <assembly fullname="Improbable.Gdk.GameObjectCreation" preserve="all"/>
+    <assembly fullname="Improbable.Gdk.TransformSynchronization" preserve="all"/>
+    <assembly fullname="Improbable.Gdk.PlayerLifecycle" preserve="all"/>
+    <assembly fullname="Improbable.Gdk.Health" preserve="all"/>
+    <assembly fullname="Improbable.Gdk.Guns" preserve="all"/>
+    <assembly fullname="Improbable.Gdk.Movement" preserve="all"/>
+    <assembly fullname="Improbable.Gdk.ObjectPooling" preserve="all"/>
+    <assembly fullname="Improbable.Gdk.Ragdoll" preserve="all"/>
+    <assembly fullname="Improbable.Gdk.StandardTypes" preserve="all"/>
+    <assembly fullname="Unity.Entities.Hybrid">
+        <type fullname="Unity.Entities.GameObjectEntity" preserve="all"/>
+    </assembly>
+</linker>
