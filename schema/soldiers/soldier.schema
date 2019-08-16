@@ -1,0 +1,14 @@
+package soldiers;
+
+import "pickups/player_res.schema";
+
+component SoldierManager {
+    id = 21003;
+    command pickups.MyEmpty move_to(pickups.SoldierPos);
+    command pickups.MyEmpty shot_to(pickups.SoldierPos);
+}
+
+component SoldierData {
+    id = 21004;
+    int64 own_entity_id = 1; 
+}

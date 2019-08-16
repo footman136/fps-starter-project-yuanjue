@@ -1,0 +1,15 @@
+package pickups;
+
+type MyEmpty {}
+
+type SoldierPos {
+	float x = 1;
+	float y = 2;
+	float z = 3;
+}
+
+component PlayerRes {
+    id = 21002;
+    uint32 res_value = 1;
+    command MyEmpty spawn_soldier(SoldierPos);
+}
