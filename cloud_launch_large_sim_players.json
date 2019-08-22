@@ -1,0 +1,48 @@
+{
+  "template": "sim_players",
+  "world": {
+    "chunkEdgeLengthMeters": 50,
+    "snapshots": {
+      "snapshotWritePeriodSeconds": 0
+    },
+    "dimensions": {
+      "xMeters": 1800,
+      "zMeters": 1800
+    }
+  },
+  "load_balancing": {
+    "layer_configurations" : [
+      {
+        "layer": "SimulatedPlayerCoordinator",
+        "rectangle_grid": {
+          "cols": 4,
+          "rows": 5
+        }
+      }
+    ]
+  },
+  "workers": [
+    {
+      "worker_type": "SimulatedPlayerCoordinator",
+      "flags": [
+        {
+          "name": "world_size",
+          "value": "24"
+        },
+        {
+          "name": "fps_simulated_players_per_coordinator",
+          "value": "0"
+        },
+        {
+          "name": "fps_simulated_players_creation_interval",
+          "value": "5"
+        }
+      ],
+      "permissions": [
+        {
+          "all": {}
+        }
+      ]
+    }
+  ]
+}
